@@ -1,9 +1,9 @@
 <?php
 
-namespace Pillars\Http\Controllers\Auth;
+namespace App\Http\Controllers\Auth;
 
-use Pillars\User;
-use Pillars\Http\Controllers\Controller;
+use App\User;
+use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
 

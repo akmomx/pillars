@@ -2,10 +2,10 @@
 
 namespace Tests;
 
+use App\User;
+use App\Exceptions\Handler;
 use Illuminate\Contracts\Debug\ExceptionHandler;
 use Illuminate\Foundation\Testing\TestCase as BaseTestCase;
-use Pillars\Exceptions\Handler;
-use Pillars\User;
 
 abstract class TestCase extends BaseTestCase
 {
@@ -42,9 +42,14 @@ abstract class TestCase extends BaseTestCase
     {
         $this->oldExceptionHandler = $this->app->make(ExceptionHandler::class);
         $this->app->instance(ExceptionHandler::class, new class extends Handler {
-            public function __construct() {}
-            public function report(\Exception $e) {}
-            public function render($request, \Exception $e) {
+            public function __construct()
+            {
+            }
+            public function report(\Exception $e)
+            {
+            }
+            public function render($request, \Exception $e)
+            {
                 throw $e;
             }
         });

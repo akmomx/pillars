@@ -171,11 +171,11 @@ return [
         /*
          * Application Service Providers...
          */
-        Pillars\Providers\AppServiceProvider::class,
-        Pillars\Providers\AuthServiceProvider::class,
-        // Pillars\Providers\BroadcastServiceProvider::class,
-        Pillars\Providers\EventServiceProvider::class,
-        Pillars\Providers\RouteServiceProvider::class,
+        App\Providers\AppServiceProvider::class,
+        App\Providers\AuthServiceProvider::class,
+        // App\Providers\BroadcastServiceProvider::class,
+        App\Providers\EventServiceProvider::class,
+        App\Providers\RouteServiceProvider::class,
 
         /*
          * Template service providers
