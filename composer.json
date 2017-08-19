@@ -26,7 +26,7 @@
             "database"
         ],
         "psr-4": {
-            "Pillars\\": "app/"
+            "App\\": "app/"
         }
     },
     "autoload-dev": {
